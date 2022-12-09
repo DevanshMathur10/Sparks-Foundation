@@ -42,7 +42,7 @@ print("Mean absolute error: %.2f" % np.mean(np.absolute(y_pred - test_scr)))
 print("Residual sum of squares (MSE): %.2f" % np.mean((y_pred - test_scr) ** 2))
 print("R2-score: %.2f" % r2_score(test_scr , y_pred) )
 
-#Predicting the value for 9.35 hrs/day.
+#Predicting the value for 9.25 hrs/day.
 hr=[[9.25]]
 my_pred=regr.predict(hr)
 print(f"\nThe score for 9.25 hrs/day is {my_pred[0][0]:.2f}\n")
